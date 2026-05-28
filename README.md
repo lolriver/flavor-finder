@@ -43,3 +43,16 @@ Flavor Finder is a modern web application designed to help you discover, save, a
    ```
 
 5. Open [http://localhost:5173](http://localhost:5173) in your browser to view the app.
+
+## 📝 Commit Strategy
+
+This project follows the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification. Please use the following prefixes for your commit messages:
+
+- `feat:` A new feature (e.g., `feat: add shopping list component`)
+- `fix:` A bug fix (e.g., `fix: resolve crash on missing ingredients`)
+- `docs:` Documentation only changes (e.g., `docs: update README setup instructions`)
+- `style:` Changes that do not affect the meaning of the code (white-space, formatting, etc.)
+- `refactor:` A code change that neither fixes a bug nor adds a feature
+- `test:` Adding missing tests or correcting existing tests
+- `chore:` Changes to the build process or auxiliary tools and libraries (e.g., `chore: update dependencies`)
+
