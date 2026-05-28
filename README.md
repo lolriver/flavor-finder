@@ -1,23 +1,33 @@
-# Flavor Finder 🍳
+# 🍳 Flavor Finder
 
-Flavor Finder is a modern web application designed to help you discover, save, and plan your meals. 
+![React](https://img.shields.io/badge/React-18.3.1-blue.svg?style=for-the-badge&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.5-blue.svg?style=for-the-badge&logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-5.4-purple.svg?style=for-the-badge&logo=vite)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC.svg?style=for-the-badge&logo=tailwind-css)
+![Supabase](https://img.shields.io/badge/Supabase-Database-3ECF8E.svg?style=for-the-badge&logo=supabase)
 
-## 🌟 Features
-- **Recipe Search**: Find recipes based on ingredients, categories, or dietary preferences.
-- **Detailed Instructions**: View step-by-step cooking instructions and nutritional information.
-- **Meal Planning**: Plan your meals for the week easily.
-- **Favorites**: Save your favorite recipes for quick access.
-- **Shopping List**: Generate and manage shopping lists based on your selected recipes.
+Flavor Finder is a modern, responsive web application designed to help you discover new recipes, save your favorites, plan your meals for the week, and automatically manage your grocery shopping list.
+
+## 🌟 Key Features
+
+- **Smart Recipe Search:** Find the perfect meal based on ingredients, categories, or specific dietary preferences using the Spoonacular API.
+- **Detailed Recipe Insights:** View step-by-step cooking instructions, ingredient lists, and full nutritional information.
+- **Weekly Meal Planning:** Organize your week by adding recipes directly to a weekly meal planner calendar.
+- **Automated Shopping Lists:** Seamlessly generate and manage shopping lists directly from your saved or planned recipes.
+- **Favorites & History:** Manage your favorite recipes and keep track of recently viewed items.
+- **Personalized Notes:** Add specific cooking notes to recipes you've tried.
+- **Theme Toggle:** Built-in Light and Dark mode.
 
 ## 🚀 Tech Stack
-- [React](https://reactjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Vite](https://vitejs.dev/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Supabase](https://supabase.com/)
-- [Spoonacular API](https://spoonacular.com/food-api)
 
-## 🛠️ Local Setup
+- **Frontend Framework:** [React 18](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Backend / Auth / DB:** [Supabase](https://supabase.com/)
+- **Recipe Data API:** [Spoonacular API](https://spoonacular.com/food-api)
+
+## 🛠️ Local Development Setup
 
 1. **Clone the repository:**
    ```bash
@@ -31,18 +41,20 @@ Flavor Finder is a modern web application designed to help you discover, save, a
    ```
 
 3. **Environment Setup:**
-   Copy the `.env.example` file to a new file named `.env` and fill in your Supabase and Spoonacular API keys:
+   Copy the example environment file and add your actual API keys:
    ```bash
    cp .env.example .env
    ```
-   *(Note: Never commit your `.env` file!)*
+   *Required Keys in `.env`:*
+   - `VITE_SPOONACULAR_API_KEY`: Get this from your Spoonacular developer dashboard.
+   - `VITE_SUPABASE_URL` & `VITE_SUPABASE_ANON_KEY`: Get these from your Supabase project settings.
 
-4. **Start the development server:**
-   ```bash
-   npm run dev
-   ```
-
-5. Open [http://localhost:5173](http://localhost:5173) in your browser to view the app.
+4. **Available Scripts:**
+   - `npm run dev`: Starts the local development server on [http://localhost:5173](http://localhost:5173).
+   - `npm run build`: Builds the app for production.
+   - `npm run preview`: Bootstraps a local web server to preview your production build.
+   - `npm run lint`: Runs ESLint to check for code quality and style issues.
+   - `npm run typecheck`: Runs the TypeScript compiler to check for type errors.
 
 ## 📝 Commit Strategy
 
